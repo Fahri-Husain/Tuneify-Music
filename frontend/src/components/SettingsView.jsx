@@ -36,7 +36,7 @@ const SettingsView = () => {
     
     setIsSubmittingReport(true);
     try {
-      const response = await fetch('http://localhost:3000/api/report', {
+      const response = await fetch('https://tuneifymusic2-fy4dlefd.b4a.run/api/report', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: reportEmail, issue: reportIssue })

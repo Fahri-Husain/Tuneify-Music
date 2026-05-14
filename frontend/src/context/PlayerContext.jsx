@@ -267,7 +267,7 @@ export const PlayerProvider = ({ children }) => {
 
   const fetchUpNext = async (videoId) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/next?id=${videoId}`);
+      const response = await fetch(`https://tuneifymusic2-fy4dlefd.b4a.run/api/next?id=${videoId}`);
       if (response.ok) return await response.json();
     } catch (e) { console.error(e); }
     return [];

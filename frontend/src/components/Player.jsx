@@ -27,7 +27,7 @@ const Player = () => {
   useEffect(() => {
     if (viewMode === 'lyrics' && currentSong) {
       setLoadingLyrics(true);
-      fetch(`http://localhost:3000/api/lyrics?id=${currentSong.id}`)
+      fetch(`https://tuneifymusic2-fy4dlefd.b4a.run/api/lyrics?id=${currentSong.id}`)
         .then(res => res.json())
         .then(data => {
           if (data.lyrics) setLyricsData(data.lyrics);

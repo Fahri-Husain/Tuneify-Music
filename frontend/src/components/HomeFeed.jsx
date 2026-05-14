@@ -83,7 +83,7 @@ const HomeFeed = () => {
     // Fetch trending songs
     const fetchTrending = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/trending');
+        const response = await fetch('https://tuneifymusic2-fy4dlefd.b4a.run/api/trending');
         if (response.ok) {
           const data = await response.json();
           setTrendingSongs(data);
